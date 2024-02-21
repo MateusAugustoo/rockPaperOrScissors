@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./img/rock.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>rock paper or scissors</h1>
+    </header>
+
+    <main>
+      <div class="gamer">
+        <div class="opcoes">
+          <button class="opcao__gamer" onclick="runGamer(this)" value="rock">👊</button>
+          <button class="opcao__gamer" onclick="runGamer(this)" value="paper">🖐️</button>
+          <button class="opcao__gamer" onclick="runGamer(this)" value="scissors">✌️</button>
+        </div>
+
+        <p>Computer:  <span class="computer__choice"></span></p>
+
+        <div class="results">
+          <p class="victory">Victory: <span class="quantity__victory">0</span></p>
+          <p class="draw">Draw: <span class="quantity__draw">0</span></p>
+          <p>Defeat: <span class="quantity__defeat">0</span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
